@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" charset="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="tailwindcss.css">
+        <title>task</title>
+    </head>
+    <body>
+        <div id="app">
+            <button v-on:click="addImg" class="w-24 h-24 border border-black">Click me</button>
+            <img :src="img" alt="img">
+        </div>
+    </body>
+</html>
